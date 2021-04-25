@@ -12,16 +12,6 @@ function [outputArg1,outputArg2] = Fun_Standard_Plot(XXX,YYY,legend_name,title_n
 %     XXX=0:0.01:100;
 %     YYY=cos(XXX);
 %% 设置图形窗口，用了第二种方法，方便单独注释
-%{
-    Hf_this = figure(...
-        'Name','your figure window name here',... % 窗口名字
-        'NumberTitle','off',...	% 是否显示名字前面的Figure 1
-        'Color','white',... % 背景颜色none,'red','green','blue','cyan','magenta','yellow','black',也可用RGB,如[110]
-        'Renderer', 'painters',...	% 渲染器
-        'Position', [1041 304 560 420],... % 含义分别为左和下边缘到窗口，宽度，高度，比例最好为4:3,...
-        'Units','pixels'... % 单位，默认是pixels,归一化为'normalized',
-        );
-%}
 Hf_this = figure;
 set(Hf_this,'Name','your figure window name here'); % 窗口名字
 Hf_this.NumberTitle='off'; % 是否显示名字前面的Figure 1 %同时可以看出操作句柄的两种形式
